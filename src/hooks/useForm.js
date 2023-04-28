@@ -14,6 +14,7 @@ export const useForm = ( initialForm = {}, formValidations = {} ) => {
         for (const formValue of Object.keys(formErrors)) {
             if(formErrors[formValue] !== null) return false
         }
+        return true
     }, [formErrors])
   
     const onInputChange = ({ target }) => {
