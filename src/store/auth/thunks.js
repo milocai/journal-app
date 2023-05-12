@@ -2,11 +2,11 @@ import { loginWithEmailPassword, logoutFirebase, registerUserWithEmailAndPasswor
 import { checkingCredentials, logout, login } from "./";
 import { clearNotesLogout } from "../journal";
 
-// export const checkingAuthetication = ( email, password ) => {
-//     return async( dispatch ) => {
-//         dispatch( checkingCredentials() );
-//     }
-// }
+export const checkingAuthetication = ( email, password ) => {
+    return async( dispatch ) => {
+        dispatch( checkingCredentials() );
+    }
+}
 
 export const startGoogleSignIn = () => {
     return async( dispatch ) => {
